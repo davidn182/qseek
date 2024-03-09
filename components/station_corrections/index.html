@@ -244,7 +244,7 @@
         <a href="../.." class="md-tabs__link">
           
   
-  Earthquake Detector
+  The Earthquake Detector
 
         </a>
       </li>
@@ -340,7 +340,7 @@
             
   
   <span class="md-ellipsis">
-    Earthquake Detector
+    The Earthquake Detector
   </span>
   
 
@@ -350,7 +350,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Earthquake Detector
+            The Earthquake Detector
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -609,6 +609,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Station Corrections
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -618,6 +629,73 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#station-specific-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Station Specific Corrections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Station Specific Corrections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exec-12--stationcorrections-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      StationCorrections Module
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-specific-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source Specific Corrections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Source Specific Corrections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exec-13--sourcespecificstationcorrections-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      SourceSpecificStationCorrections Module
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -693,6 +771,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#station-specific-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Station Specific Corrections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Station Specific Corrections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exec-12--stationcorrections-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      StationCorrections Module
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-specific-corrections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source Specific Corrections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Source Specific Corrections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exec-13--sourcespecificstationcorrections-module" class="md-nav__link">
+    <span class="md-ellipsis">
+      SourceSpecificStationCorrections Module
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -716,22 +850,97 @@
 
 <h1 id="station-corrections">Station Corrections</h1>
 <p>Station corrections can be extract from previous runs to refine the localisation accuracy. The corrections can also help to improve the semblance find more events in a dataset.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="n">File</span> <span class="s2">&quot;/opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/markdown_exec/formatters/python.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">59</span><span class="p">,</span> <span class="ow">in</span> <span class="n">_run_python</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">exec</span><span class="p">(</span><span class="n">compiled</span><span class="p">,</span> <span class="n">exec_globals</span><span class="p">)</span>  <span class="c1"># noqa: S102</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="o">^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;code block: n10&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="kn">from</span> <span class="nn">qseek.insights</span> <span class="kn">import</span> <span class="n">StationCorrections</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="ne">ModuleNotFoundError</span><span class="p">:</span> <span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="s1">&#39;qseek.insights&#39;</span>
+<h2 id="station-specific-corrections">Station Specific Corrections</h2>
+<p><img alt="Source specific delay statistic" src="../../images/station-delay-times.webp" />
+<em>Statistics of station delay times.</em>
+</p>
+<p><h3 id="exec-12--stationcorrections-module">StationCorrections Module</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="exec-12--__tabbed_1_1" name="exec-12--__tabbed_1" type="radio" /><input id="exec-12--__tabbed_1_2" name="exec-12--__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="exec-12--__tabbed_1_1">Config StationCorrections</label><label for="exec-12--__tabbed_1_2">JSON <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<dl>
+<dt><strong><code>statistic</code>: <code>median | average</code></strong></dt>
+<dd>
+<p>Arithmetic measure for the traveltime delays. Choose from <code>median</code> and <code>average</code>. Default is <code>median</code>.</p>
+</dd>
+<dt><strong><code>weighting</code>: <code>none | PhaseNet | semblance | add-PhaseNet-semblance | mul-PhaseNet-semblance</code></strong></dt>
+<dd>
+<p>Weighting of the traveltime delays. Choose from <code>none</code>, <code>PhaseNet</code>, <code>semblance</code>, <code>add-PhaseNet-semblance</code> and <code>mul-PhaseNet-semblance</code>. Default is <code>mul-PhaseNet-semblance</code>.</p>
+</dd>
+<dt><strong><code>min_num_picks</code>: <code>100</code></strong></dt>
+<dd>
+<p>Minimum number of picks at a station required to calculate station corrections. Default is 100.</p>
+</dd>
+<dt><strong><code>station_corrections</code></strong></dt>
+<dd>
+<p>Path to extracted station corrections. A JSON file.</p>
+</dd>
+</dl>
+</div>
+<div class="tabbed-block">
+<div class="language-json highlight"><span class="filename">JSON for StationCorrections</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;corrections&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;StationCorrections&quot;</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;statistic&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;median&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;weighting&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mul-PhaseNet-semblance&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;min_num_picks&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;station_corrections&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;corrections/StationEventCorrections.json&quot;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
 </span></code></pre></div>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="n">File</span> <span class="s2">&quot;/opt/hostedtoolcache/Python/3.11.8/x64/lib/python3.11/site-packages/markdown_exec/formatters/python.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">59</span><span class="p">,</span> <span class="ow">in</span> <span class="n">_run_python</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">exec</span><span class="p">(</span><span class="n">compiled</span><span class="p">,</span> <span class="n">exec_globals</span><span class="p">)</span>  <span class="c1"># noqa: S102</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="o">^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  <span class="n">File</span> <span class="s2">&quot;&lt;code block: n11&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">2</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="kn">from</span> <span class="nn">qseek.insights</span> <span class="kn">import</span> <span class="n">SourceSpecificStationCorrections</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="ne">ModuleNotFoundError</span><span class="p">:</span> <span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="s1">&#39;qseek.insights&#39;</span>
+</div>
+</div>
+</div>
+</p>
+<h2 id="source-specific-corrections">Source Specific Corrections</h2>
+<p><img alt="Source specific corrections volume" src="../../images/delay-volume.webp" />
+<em>Delay volume for a selected stations.</em>
+</p>
+<p><h3 id="exec-13--sourcespecificstationcorrections-module">SourceSpecificStationCorrections Module</h3>
+<p>Source specific station travel time corrections.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="exec-13--__tabbed_1_1" name="exec-13--__tabbed_1" type="radio" /><input id="exec-13--__tabbed_1_2" name="exec-13--__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="exec-13--__tabbed_1_1">Config SourceSpecificStationCorrections</label><label for="exec-13--__tabbed_1_2">JSON <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<dl>
+<dt><strong><code>station_corrections</code></strong></dt>
+<dd>
+<p>The station corrections as path to a JSON.</p>
+</dd>
+<dt><strong><code>statistic</code>: <code>median | average</code></strong></dt>
+<dd>
+<p>Arithmetic measure for the traveltime delays. Choose from <code>median</code> and <code>average</code>.</p>
+</dd>
+<dt><strong><code>weighting</code>: <code>none | PhaseNet | semblance | add-PhaseNet-semblance | mul-PhaseNet-semblance</code></strong></dt>
+<dd>
+<p>Weighting of the traveltime delays. Choose from <code>none</code>, <code>PhaseNet</code>, <code>semblance</code>, <code>add-PhaseNet-semblance</code> and <code>mul-PhaseNet-semblance</code>.</p>
+</dd>
+<dt><strong><code>min_num_picks</code>: <code>-1</code></strong></dt>
+<dd>
+<p>Minimum number of picks required for each node to calculate station corrections. -1 takes all stations.</p>
+</dd>
+<dt><strong><code>octree_level</code>: <code>0</code></strong></dt>
+<dd>
+<p>The octree level to use for the station corrections.</p>
+</dd>
+<dt><strong><code>lut_cache_size</code></strong></dt>
+<dd>
+<p>Size of the LUT cache. Default is <code>2G</code>.</p>
+</dd>
+</dl>
+</div>
+<div class="tabbed-block">
+<div class="language-json highlight"><span class="filename">JSON for SourceSpecificStationCorrections</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;corrections&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SourceSpecificStationCorrections&quot;</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;station_corrections&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;corrections/StationEventCorrections.json&quot;</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;statistic&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;median&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;weighting&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mul-PhaseNet-semblance&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;min_num_picks&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;octree_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;lut_cache_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2147483648</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">}</span>
 </span></code></pre></div>
+</div>
+</div>
+</div>
+</p>
 
 
 
