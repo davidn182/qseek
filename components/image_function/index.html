@@ -818,7 +818,7 @@
 <dd>
 <p>SeisBench pre-trained PhaseNet model to use. Choose from <code>ethz</code>, <code>geofon</code>, <code>instance</code>, <code>iquique</code>, <code>lendb</code>, <code>neic</code>, <code>obs</code>, <code>original</code>, <code>scedc</code>, <code>stead</code>. For more details see SeisBench documentation</p>
 </dd>
-<dt><strong><code>window_overlap_samples</code>: <code>2000</code></strong></dt>
+<dt><strong><code>window_overlap_samples</code>: <code>1500</code></strong></dt>
 <dd>
 <p>Window overlap in samples.</p>
 </dd>
@@ -838,9 +838,9 @@
 <dd>
 <p>Method to stack the overlaping blocks internally. Choose from <code>avg</code> and <code>max</code>.</p>
 </dd>
-<dt><strong><code>upscale_input</code>: <code>1</code></strong></dt>
+<dt><strong><code>upscale_input</code>: <code>1.0</code></strong></dt>
 <dd>
-<p>Upscale input by factor. This augments the input data from e.g. 100 Hz to 50 Hz (factor: <code>2</code>). Can be useful for high-frequency earthquake signals.</p>
+<p>Upscale input by factor. This augments the input data from e.g. 100 Hz to 50 Hz (factor: <code>2</code>). Can be useful for high-frequency microseismic events.</p>
 </dd>
 <dt><strong><code>phase_map</code></strong></dt>
 <dd>
@@ -856,12 +856,12 @@
 <div class="language-json highlight"><span class="filename">JSON for PhaseNet</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&quot;image&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PhaseNet&quot;</span><span class="p">,</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ethz&quot;</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;window_overlap_samples&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">&quot;window_overlap_samples&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1500</span><span class="p">,</span>
 </span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="nt">&quot;torch_use_cuda&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 </span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">&quot;torch_cpu_threads&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;batch_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="p">,</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;stack_method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;avg&quot;</span><span class="p">,</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;upscale_input&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;upscale_input&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span><span class="p">,</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;phase_map&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">&quot;P&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;constant:P&quot;</span><span class="p">,</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nt">&quot;S&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;constant:S&quot;</span>
