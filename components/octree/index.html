@@ -264,7 +264,7 @@
         <a href="../configuration/" class="md-tabs__link">
           
   
-  Usage
+  Configuration
 
         </a>
       </li>
@@ -474,7 +474,7 @@
             
   
   <span class="md-ellipsis">
-    Usage
+    Configuration
   </span>
   
 
@@ -484,7 +484,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Usage
+            Configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -773,8 +773,7 @@
 <h1 id="octree">Octree</h1>
 <p>A 3D space is searched for sources of seismic energy. Qseek created an octree structure which is iteratively refined when energy is detected, to focus on the source' location. This speeds up the search and improves the resolution of the localisations.</p>
 <p><img alt="Octree Concept" src="../../images/octree-concept.webp" /></p>
-<p><em>Surface projection of the refined octree focusing on the seismic source region. In this example four levels of refinement are can be seen, refining the 3D octree from the initial 4000 nodes to 8823 nodes.</em>
-</p>
+<p><em>Surface projection of the refined octree focusing on the seismic source region. In this example four levels of refinement are can be seen, refining the 3D octree from the initial 4000 nodes to 8823 nodes.</em></p>
 <p><h3 id="exec-6--octree-module">Octree Module</h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="exec-6--__tabbed_1_1" name="exec-6--__tabbed_1" type="radio" /><input id="exec-6--__tabbed_1_2" name="exec-6--__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="exec-6--__tabbed_1_1">Config Octree</label><label for="exec-6--__tabbed_1_2">JSON <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2H3v2h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h2v-2H8v-5a2 2 0 0 0-2-2 2 2 0 0 0 2-2V5h2V3m6 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3h2Z"/></svg></span></label></div>
 <div class="tabbed-content">
@@ -784,7 +783,7 @@
 <dd>
 <p>The reference location of the octree.</p>
 </dd>
-<dt><strong><code>root_node_size</code>: <code>2000.0</code></strong></dt>
+<dt><strong><code>root_node_size</code>: <code>1000.0</code></strong></dt>
 <dd>
 <p>Initial size of the root octree node at level 0 in meters.</p>
 </dd>
@@ -816,7 +815,7 @@
 </span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">&quot;elevation&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span><span class="p">,</span>
 </span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">&quot;depth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0</span>
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p">},</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;root_node_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2000.0</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;root_node_size&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1000.0</span><span class="p">,</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;n_levels&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
 </span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nt">&quot;east_bounds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="mf">-10000.0</span><span class="p">,</span>

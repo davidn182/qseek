@@ -262,7 +262,7 @@
         <a href="components/configuration/" class="md-tabs__link">
           
   
-  Usage
+  Configuration
 
         </a>
       </li>
@@ -530,7 +530,7 @@
             
   
   <span class="md-ellipsis">
-    Usage
+    Configuration
   </span>
   
 
@@ -540,7 +540,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Usage
+            Configuration
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -797,15 +797,25 @@
 <p><em>Seismic swarm activity at Iceland, Reykjanes Peninsula during a 2020 unrest. 15,000+ earthquakes detected, outlining a dike intrusion, preceeding the 2021 Fagradasfjall eruption. Visualized in <a href="https://pyrocko.org">Pyrocko Sparrow</a>.</em></p>
 <h2 id="features">Features</h2>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" disabled checked/> Earthquake phase detection using machine-learning pickers from <a href="https://github.com/seisbench/seisbench">SeisBench</a></li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> Earthquake phase detection using machine-learning pickers from <a href="https://github.com/seisbench/seisbench">SeisBench</a><ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled checked/> <a href="https://doi.org/10.1093/gji/ggy423">PhaseNet (Zhu and Beroza, 2018</a></li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> <a href="https://doi.org/10.1038/s41467-020-17591-w">EQTransformer (Mousavi et al., 2020)</a></li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> <a href="https://doi.org/10.1093/gji/ggae049">OBSTransformer (Niksejel and Zahng, 2024)</a></li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> LFEDetect</li>
+</ul>
+</li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> Octree localisation approach for efficient and accurate search</li>
-<li class="task-list-item"><input type="checkbox" disabled checked/> Different velocity models:</li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> Different velocity models:<ul class="task-list">
 <li class="task-list-item"><input type="checkbox" disabled checked/> Constant velocity</li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> 1D Layered velocity model</li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> 3D fast-marching velocity model (NonLinLoc compatible)</li>
-<li class="task-list-item"><input type="checkbox" disabled checked/> Extraction of earthquake event features:</li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled checked/> Extraction of earthquake event features:<ul class="task-list">
 <li class="task-list-item"><input type="checkbox" disabled checked/> Local magnitudes</li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> Ground motion attributes</li>
+</ul>
+</li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> Automatic extraction of modelled and picked travel times</li>
 <li class="task-list-item"><input type="checkbox" disabled checked/> Calculation and application of station corrections / station delay times</li>
 <li class="task-list-item"><input type="checkbox" disabled/> Real-time analytics on streaming data (e.g. SeedLink)</li>
